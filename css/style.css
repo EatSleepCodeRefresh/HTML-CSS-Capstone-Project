@@ -129,9 +129,7 @@ form ul {
 	margin-right: 1em;
 }
 
-.games {
-	display: none;
-}
+
 
 }
 /*style hides the tablet class*/
@@ -178,7 +176,7 @@ main {
 	display: inline;
 }
 
-.games {
+.game {
 	display:inline;
 }
 
@@ -346,7 +344,7 @@ section a {
 		display: none;
 	}
 	
-	.games {
+	.game {
 		display: none;
 	}
 	
