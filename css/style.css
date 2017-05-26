@@ -1,7 +1,7 @@
 /*style specifies the background color and width*/
 body {
-	background: #0000ff;
-	max-width: 100%
+	max-width: 100%;
+	background-color: grey;
 }
 /*style specifies the image width*/
 img {
@@ -16,37 +16,36 @@ nav {
 /*style specifies the navagation unordered list padding, and margin*/
 nav ul {
 	padding: 0;
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 /*style specifies the navagation list font, background, border, list type, margin, padding and background*/
 nav li {
 	
 	font-family: 'Press Start 2P', cursive;
-	background-color: grey;
+	background-color: #80bfff;
 	border-radius: 1em;
 	list-style-type: none;
-	margin: 0.3em;
-	padding: 0.4em; 
-	background: #00ff00;
+	margin: 1em;
+	padding: 0;
 	
 }
 /*style specifies the navagation list anchors text decoration and color*/
 nav li a {
 	text-decoration: none;
-	color: #000000;
+	color: #ff7733;
 }
 /*style specifies the navagation links pseudo-classes*/
 nav li a:link {
-		color: #FFFFFF;
+		color: #ff7733;
 	}
 	
 nav li a:visited {
-		color: #CCCCFF;
+		color: none;
 	}
 	
 nav li a:hover {
-		color: #grey;
+		color: #ff7733;
 		font-style: italic;
 	}
 
@@ -59,9 +58,13 @@ nav li a:hover {
 .desktop {
 	display: none;
 }
+
+.gamestobuy {
+	display: inline;
+}
 /*style specifies the section color and font size*/
 section {
-	color: #000000
+	color: #000000;
 	font-size: 1em;
 }
 
@@ -77,11 +80,15 @@ main {
 	background-color: #FFFFFF;
 }
 /*style specifies the main anchors color, padding, and text decoration*/
-main a {
+/*main a {
 	
 	color: #000000;
 	padding: 0.5em;
 	text-decoration: none;
+}*/
+
+main article {
+	display: inline;
 }
 /*style specifies the headers font size*/
 header {
@@ -99,6 +106,10 @@ h2 {
 h2 p {
 	text-align: center;
 	margin: 1em;
+}
+
+h3 {
+	color: red;
 }
 
 /*style specifies the footers font size, text align, margin-top, and color*/
@@ -119,19 +130,18 @@ label {
 	display: block;
 }
 
-/*style specifies the form unordered list to have no list type*/
-form ul {
-	list-style-type: none;
-}
+
 /*style specifies the check box to display inline block and margin right*/
 .chkbx {
 	display: inline-block;
-	margin-right: 1em;
+	margin-top: 2em;
+}
+
+.submit {
+	display: submit;
 }
 
 
-
-}
 /*style hides the tablet class*/
 .tablet {
 	display: none;
@@ -140,11 +150,23 @@ form ul {
 .desktop {
 	display: none;
 }
+
 /*style specifies the copyright id float, margin, and width*/
 #copyright {
 	float: left;
 	margin-top: 2em;
 	width: 80%;
+}
+
+/*style rule for social div*/
+#social {
+	width: 10%
+}
+
+/*style rule for social media icons*/
+#social img {
+	padding: 0.5em;
+	text-align: center;
 }
 
 
@@ -161,12 +183,14 @@ nav li {
 }
 
 main {
-	background-color: #1D1D1C;
 	margin-top: -0.3em;
 	border-radius: 0;
 	font-family: 'Press Start 2P', cursive;
 }
 
+.rules {
+	display: inline;
+}
 
 .desktop {
 	display: none;
@@ -179,6 +203,9 @@ main {
 .game {
 	display:inline;
 }
+
+
+
 
 h2 {
 	text-align: center;
@@ -193,6 +220,24 @@ section a {
 	padding: 1em;
 	font-size:1em;
 }
+
+form {
+		text-align: left;
+		padding: 0em;
+		margin: 0em;
+	}
+	
+	form label {
+		color: red;
+		text-align: left;
+		margin: -1em;
+		padding: 1em;
+	}
+	
+	form ul {
+		text-align: center;
+		padding: 1em;
+	}
 	
 }
 
@@ -229,7 +274,6 @@ section a {
 		padding: 0;
 		width: 100%;	
 		font-family: 'Press Start 2P', cursive;
-		color: #00ff00;
 		
 	}
 	
@@ -238,7 +282,7 @@ section a {
 	
 	/*style rules for pseudo-classes*/
 	nav li a:link {
-		color: #FFFFFF;
+		color: 
 	}
 	
 	nav li a:visited {
@@ -246,7 +290,7 @@ section a {
 	}
 	
 	nav li a:hover {
-		color: #grey;
+		color: #FFFFFF;
 		font-style: italic;
 	}
 	
@@ -277,8 +321,14 @@ section a {
 }
 	
 	/*style specifies a gradient for the body element*/
-	body {
+#background {
 		background-color: #grey;
+		height: 5em;
+		width: 10px;
+	}
+	
+	.chkbx {
+		display: inline;
 	}
 	
 	.tour {
@@ -288,23 +338,31 @@ section a {
 	form {
 		text-align: left;
 		padding: 0em;
+		margin: 0em;
 	}
-	
+		
 	form label {
+		color: #33ffff;
 		text-align: left;
+		margin: -1em;
 		padding: 1em;
 	}
 	
 	form ul {
 		text-align: left;
-		padding: 0em;
+		padding: 1em;
+	}
+	
+	form input {
+		padding: 1em;
+		margin: 1em;
 	}
 	
 	/*style specifies a background color, margin, and padding for footer element*/
 	footer {
 		background-color: #2A2A2A;
 		margin-top: 9.5em;
-		padding: 0.5em;
+		padding: 0;
 		overflow: auto;
 	}
 	
@@ -351,54 +409,137 @@ section a {
 	.desktop {
 		display: inline;
 	}
-	/*style for main article h2 element*/
-	main article h2 {
-		color: #FFFFFF;
+	.rules {
+		display: inline;
+		min-width: 100%;
+		height: 250px;
 	}
+	
+.gameapp {
+	background-position: center, no-repeat;
+	background-image: url(../images/gamebuy.jpg);
+	background-size: 100%;
+}
+
+.container0 {
+	background-image: url(../images/cubes.gif);
+	background-size: 100%;
 }
 	
+.container1 {
+	background-image: url(../images/legends.jpg);
+	background-size: cover;
+}
+
+.container2 {
+	background-image: url(../images/pacman.gif);
+	background-size: 100%;
+}
+
+.container3 {
+	background-image: url(../images/compete.gif);
+	background-size: 100%;
+}
+
+.container4 {
+	background-image: url(../images/clouds.gif);
+}
 	
+.suggestions {	
+   width: 100%;
+   background: white;
+   font-family:  'Press Start 2P', cursive;
+}
+
+header {
+   width: 100%;
+   color: #00ccff;
+   font-size: 2em;
+   font-weight: bold;
+   text-align: center;
+   line-height: 1.5em;
+   border-bottom: 1px solid black;
+   border-left: 1px solid black;
+   border-right: 1px solid black;
+   padding: 0;
+}
+
+#results {
+   border: none;
+   height: 50px;
+   float: right;
+   width: 200px;
+   text-align: left;
+   color: white;
+}
+
+div p {
+   font-weight: bold;
+   margin-top: 0.4em;
+} 
+
+#results li {
+   margin-left: 1em;
+   list-style-type: disc;
+   padding: .2em;
+} 
+
+
+
+#placeLabel{
+	float: left;
+	font-size: 1em;
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+} 
+
+.form {
+   background: ;
+   padding: 2px;
+   height: 150px;
+   width: 400px;
+  } 
+
+fieldset {
+   padding: 3em;
+   border: none;
+   float: left;
+   width: 80%;
+   height: 1em;
+  } 
+
+
+input {
+   font-size: 1em;
+   width: 9em;
+   clear: left;
+   margin: 0 auto;
+   padding: 4em;
+}
+
+input:focus {
+   background: #e3d5ba;
+}
+
+fieldset label {
+   display: block;
+   font-weight: bold;
+   text-align: left;
+}
+
+input label, button {
+   margin: -4em;
+   float: right;
+} 
+
+
+article {
+	background-color: green;
+	width: 50%;
+	padding: 1em;
+	font-size: 1em;
+}
+	/*style for main article h2 element*/
+	main article h2 {
+		color: grey;
+	}
+} 

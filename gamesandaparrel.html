@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Gaming Lounge</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header>
+	<h1>
+	Games & Aparrel
+	</h1>
+	</header>
+<div class="gameapp">
+	
+	<nav>
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="rules.html">Rules</a></li>
+			<li><a href="gamerooms.html">Game Rooms</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+			<li><a href="gamesandaparrel.html">Games and Aparrel</a></li>
+			</ul>			
+	</nav>
+
+	<main>
+	
+	
+	<div class="gamestobuy">
+		<article>
+      <h3>Games To Buy</h3>
+      <form>
+         <input type="checkbox" id="item1" value="50" />
+         <label for="item1">Grand Theft Auto 5(NextGen) ($50.00)</label>
+         <input type="checkbox" id="item2" value="20" />
+         <label for="item2">H1Z1(PC) ($20.00)</label>
+         <input type="checkbox" id="item3" value="10" />
+         <label for="item3">Black Ops(console)  ($10.00)</label>
+         <input type="checkbox" id="item4" value="25" />
+         <label for="item4">Minecraft(PC,NextGen,Console) ($25.00)</label> 
+	</form>
+	<h3>Game Lounge Aparrel</h3>
+	<form>
+		 <input type="checkbox" id="item5" value="20" />
+         <label for="item5">Gamer Lounge Tee ($20.00)</label>
+         <input type="checkbox" id="item6" value="40" />
+         <label for="item6">Gamer Lounge Hoodie ($40.00)</label>
+         <input type="checkbox" id="item7" value="15" />
+         <label for="item7">Gamer Lounge Baseball Cap  ($15.00)</label>
+         <input type="checkbox" id="item8" value="10" />
+         <label for="item8">Gamer Lounge String Bag($10.00)</label>
+		  <input type="submit" id="submit" value="Submit" />
+      </form>
+   </article>
+
+   <script>
+		function calcTotal() {
+			var itemTotal = 0;
+			var item1 = document.getElementById("item1");
+			var item2 = document.getElementById("item2");
+			var item3 = document.getElementById("item3");
+			var item4 = document.getElementById("item4");
+			var item5 = document.getElementById("item5");
+			var item6 = document.getElementById("item6");
+			var item7= document.getElementById("item7");
+			var item8 = document.getElementById("item8");
+		   (item1.checked) ? (itemTotal +=50) : (itemTotal +=0);
+		   (item2.checked) ? (itemTotal +=20) : (itemTotal +=0);
+		   (item3.checked) ? (itemTotal +=10) : (itemTotal +=0);
+		   (item4.checked) ? (itemTotal +=25) : (itemTotal +=0);
+		   (item5.checked) ? (itemTotal +=20) : (itemTotal +=0);
+		   (item6.checked) ? (itemTotal +=40) : (itemTotal +=0);
+		   (item7.checked) ? (itemTotal +=15) : (itemTotal +=0);
+		   (item8.checked) ? (itemTotal +=10) : (itemTotal +=0);
+		   var salesTaxRate = 0.07;
+		   var orderTotal = itemTotal + (itemTotal * salesTaxRate);
+		   alert ("Thank you for buying from The Gaming Lounge. Your order total is $" + orderTotal);
+		}
+		   document.getElementById("submit").addEventListener("click", calcTotal, false);	   
+	</script>
+	</div>  
+	</main>
+	
+	<!--Use the footer area to add webpage footer content--> 
+	<footer>
+		&copy; Copyright 2017. All Rights Reserved.<br>
+		
+		<div id="social">
+			<p>Connect with us:</p>
+			<p><a href="https://www.facebook.com/thegaminglounge1/"><img src="images/fblogo.jpg" alt="Facebook logo"></a>
+
+		</div>
+	</div>
+	</footer>
+</body>
+</html>
