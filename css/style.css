@@ -245,7 +245,6 @@ form {
 	
 	header {
 		text-align: center;
-		color: #00ccff;
 		font-size: 2em;
 		padding: .5em;
 	}
@@ -254,25 +253,24 @@ form {
 	nav {
 		margin-bottom: 4em;
 		margin-top: 4em;
-		width: 85%;
 		list-style: none;
-		padding: 0;
+		padding-bottom: -44px;
 	
 }
 	
 	/*style specifies margin and padding for the unordered list in the nav*/
 	nav ul {
-		padding: 0;
+		padding: 2em;
 		margin-top: 0.1em;
 		margin-bottom: 0.1em;
 	}
 	
 	/*style for navigation list items specifies a border radius, border, margin, width, and padding*/
 	nav li {
-		margin-left: 3em;
-		margin-right:3em;
-		padding: 0;
-		width: 100%;	
+		margin-left: 1em;
+		margin-right:1em;
+		padding: -1em;
+		width: 50%;	
 		font-family: 'Press Start 2P', cursive;
 		
 	}
@@ -346,6 +344,7 @@ form {
 		text-align: left;
 		margin: -1em;
 		padding: 1em;
+		width: 100%;
 	}
 	
 	form ul {
@@ -419,37 +418,39 @@ form {
 	background-position: center, no-repeat;
 	background-image: url(../images/gamebuy.jpg);
 	background-size: 100%;
+	padding-top: .5em;
 }
 
 .container0 {
 	background-image: url(../images/cubes.gif);
 	background-size: 100%;
+	padding-top: .5em;
 }
 	
 .container1 {
 	background-image: url(../images/legends.jpg);
 	background-size: cover;
+	padding-top: .5em;
 }
 
 .container2 {
 	background-image: url(../images/pacman.gif);
 	background-size: 100%;
+	padding-top: .5em;
 }
 
 .container3 {
 	background-image: url(../images/compete.gif);
 	background-size: 100%;
+	padding-top: .5em;
 }
 
 .container4 {
 	background-image: url(../images/clouds.gif);
+	padding-top: .5em;
 }
 	
-.suggestions {	
-   width: 100%;
-   background: white;
-   font-family:  'Press Start 2P', cursive;
-}
+
 
 header {
    width: 100%;
