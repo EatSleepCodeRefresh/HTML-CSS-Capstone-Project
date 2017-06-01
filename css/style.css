@@ -9,7 +9,7 @@ img {
 }
 /*style specifies the navigation font size, text align, and width*/
 nav {
-	font-size: 2em;
+	font-size: 1.5em;
 	text-align: center;
 	width: 100%;
 }
@@ -18,17 +18,18 @@ nav ul {
 	padding: 0;
 	margin-top: 0;
 	margin-bottom: 0;
+	
 }
 /*style specifies the navagation list font, background, border, list type, margin, padding and background*/
 nav li {
 	
 	font-family: 'Press Start 2P', cursive;
-	background-color: #80bfff;
 	border-radius: 1em;
 	list-style-type: none;
 	margin: 1em;
 	padding: 0;
-	
+	display: inline;
+
 }
 /*style specifies the navagation list anchors text decoration and color*/
 nav li a {
@@ -36,7 +37,7 @@ nav li a {
 	color: #ff7733;
 }
 /*style specifies the navagation links pseudo-classes*/
-nav li a:link {
+/nav li a:link {
 		color: #ff7733;
 	}
 	
@@ -272,7 +273,7 @@ form {
 		padding: -1em;
 		width: 50%;	
 		font-family: 'Press Start 2P', cursive;
-		
+		font-size: 1.3em;
 	}
 	
 	/*style for navagation links specifies display and padding*/
@@ -401,10 +402,6 @@ form {
 		display: none;
 	}
 	
-	.game {
-		display: none;
-	}
-	
 	.desktop {
 		display: inline;
 	}
@@ -414,13 +411,6 @@ form {
 		height: 250px;
 	}
 	
-.gameapp {
-	background-position: center, no-repeat;
-	background-image: url(../images/gamebuy.jpg);
-	background-size: 100%;
-	padding-top: .5em;
-}
-
 .container0 {
 	background-image: url(../images/cubes.gif);
 	background-size: 100%;
@@ -428,8 +418,8 @@ form {
 }
 	
 .container1 {
-	background-image: url(../images/legends.jpg);
-	background-size: cover;
+	background-image: url(../images/coins.gif);
+	background-size: 50%;
 	padding-top: .5em;
 }
 
@@ -449,6 +439,7 @@ form {
 	background-image: url(../images/clouds.gif);
 	padding-top: .5em;
 }
+
 	
 
 
