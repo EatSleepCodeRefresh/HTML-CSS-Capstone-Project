@@ -1,4 +1,8 @@
 /*style specifies the background color and width*/
+/*.container0 {
+	background-image: url(../images/gaming.jpg);
+	background-size: cover;
+} */
 body {
 	max-width: 100%;
 	background-color: grey;
@@ -29,24 +33,24 @@ nav li {
 	margin: 1em;
 	padding: 0;
 	display: inline;
+	background-color: #00CCFF;
 
 }
 /*style specifies the navagation list anchors text decoration and color*/
 nav li a {
 	text-decoration: none;
-	color: #ff7733;
 }
 /*style specifies the navagation links pseudo-classes*/
-/nav li a:link {
-		color: #ff7733;
-	}
+ nav li a:link {
+		color: #1aff1a;
+	} 
 	
 nav li a:visited {
-		color: none;
+		color: 1aff1a;
 	}
 	
 nav li a:hover {
-		color: #ff7733;
+		color: #FFFFFF;
 		font-style: italic;
 	}
 
@@ -109,9 +113,14 @@ h2 p {
 	margin: 1em;
 }
 
-h3 {
+ h3 {
 	color: red;
 }
+
+#clothes {
+	text-align: left;
+}
+
 
 /*style specifies the footers font size, text align, margin-top, and color*/
 footer {
@@ -274,6 +283,7 @@ form {
 		width: 50%;	
 		font-family: 'Press Start 2P', cursive;
 		font-size: 1.3em;
+		text-decoration: none;
 	}
 	
 	/*style for navagation links specifies display and padding*/
@@ -281,22 +291,22 @@ form {
 	
 	/*style rules for pseudo-classes*/
 	nav li a:link {
-		color: 
+		color: #1aff1a;
 	}
 	
 	nav li a:visited {
-		color: #CCCCFF;
-	}
+		color: #1aff1a;
+	} 
 	
 	nav li a:hover {
 		color: #FFFFFF;
 		font-style: italic;
-	}
+	} 
 	
 	/*style specifies border, box shadow, and margin for the main element*/ 
 	main {
-		background-color: #1D1D1C;
-	}
+		background-color: #1D1D1C; 
+	} 
 	
 	/*style specifies left and right padding for paragraph elements within the main element*/
 	main p{
@@ -334,6 +344,10 @@ form {
 		max-width: 100%;
 	}
 	
+	h3 form {
+		float: left;
+	}
+	
 	form {
 		text-align: left;
 		padding: 0em;
@@ -341,7 +355,7 @@ form {
 	}
 		
 	form label {
-		color: #33ffff;
+		color: #33ffff; 
 		text-align: left;
 		margin: -1em;
 		padding: 1em;
@@ -394,26 +408,55 @@ form {
 		color: #FFFFFF;
 	}
 	
-	.mobile {
+.mobile {
 		display: none;
-	}
+}
 	
-	.tablet {
+.tablet {
 		display: none;
-	}
+}
 	
-	.desktop {
+.desktop {
 		display: inline;
-	}
-	.rules {
+}
+.rules {
 		display: inline;
 		min-width: 100%;
 		height: 250px;
-	}
+}
+	
+td {
+	color: #FFFFFF;
+}
+	
+#item1 {
+	float: left;
+}
+#item2 {
+	float: left;
+}
+#item3 {
+	float: left;
+}
+#item4 {
+	float: left;
+}
+#item5 {
+	float: left;
+}
+#item6 {
+	float: left;
+}
+#item7 {
+	float: left;
+}
+#item8 {
+	float: left;
+}
 	
 .container0 {
 	background-image: url(../images/cubes.gif);
-	background-size: 100%;
+	background-size: cover;
 	padding-top: .5em;
 }
 	
@@ -500,18 +543,6 @@ fieldset {
   } 
 
 
-input {
-   font-size: 1em;
-   width: 9em;
-   clear: left;
-   margin: 0 auto;
-   padding: 4em;
-}
-
-input:focus {
-   background: #e3d5ba;
-}
-
 fieldset label {
    display: block;
    font-weight: bold;
@@ -523,13 +554,6 @@ input label, button {
    float: right;
 } 
 
-
-article {
-	background-color: green;
-	width: 50%;
-	padding: 1em;
-	font-size: 1em;
-}
 	/*style for main article h2 element*/
 	main article h2 {
 		color: grey;
